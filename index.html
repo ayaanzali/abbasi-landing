@@ -24,6 +24,19 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
+        /* Prevent caret cursor on non-editable elements */
+        h1, h2, h3, h4, h5, h6 {
+            cursor: default;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .location {
+            cursor: default;
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -121,6 +134,7 @@
             letter-spacing: 0.5px;
             transition: all 0.3s ease;
             border: 1px solid #ffffff;
+            cursor: pointer;
         }
 
         .cta-button:hover {
@@ -141,6 +155,7 @@
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: border-color 0.3s ease;
+            cursor: pointer;
         }
 
         .email-link:hover {
