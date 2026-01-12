@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General and Operations Manager - Abbasi & Abbasi Inc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            color: #ffffff;
+            background-color: #2c3e50;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 40px 120px;
+        }
+
+        .hero {
+            margin-bottom: 0;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .company-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 24px;
+            color: #ffffff;
+        }
+
+        .job-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 400;
+            color: #ffffff;
+            letter-spacing: -0.3px;
+        }
+
+        .location {
+            margin: 24px 0 40px;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+            letter-spacing: 0.3px;
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #ffffff;
+            letter-spacing: -0.2px;
+        }
+
+        .responsibilities {
+            list-style: none;
+            padding: 0;
+        }
+
+        .responsibilities li {
+            margin-bottom: 24px;
+            padding-left: 32px;
+            position: relative;
+            font-size: 17px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .responsibilities li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 400;
+        }
+
+        .cta-section {
+            margin-top: 100px;
+            padding-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .cta-text {
+            font-size: 18px;
+            margin-bottom: 32px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 16px 48px;
+            background-color: #ffffff;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: 1px solid #ffffff;
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .application-note {
+            margin-top: 16px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 300;
+        }
+
+        .email-link {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .email-link:hover {
+            border-bottom-color: rgba(255, 255, 255, 0.9);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 24px 80px;
+            }
+
+            .hero {
+                margin-bottom: 0;
+                padding-bottom: 20px;
+            }
+
+            .company-name {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .job-title {
+                font-size: 26px;
+            }
+
+            .location {
+                margin: 25px 0 35px;
+                font-size: 16px;
+            }
+
+            .section {
+                margin-bottom: 60px;
+            }
+
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+
+            .responsibilities li {
+                font-size: 16px;
+                margin-bottom: 20px;
+                padding-left: 24px;
+            }
+
+            .cta-section {
+                margin-top: 80px;
+                padding-top: 50px;
+            }
+
+            .cta-text {
+                font-size: 16px;
+            }
+
+            .application-note {
+                font-size: 13px;
+            }
+
+            .cta-button {
+                padding: 14px 40px;
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 40px 20px 60px;
+            }
+
+            .company-name {
+                font-size: 32px;
+            }
+
+            .job-title {
+                font-size: 22px;
+            }
+
+            .location {
+                margin: 20px 0 30px;
+            }
+
+            .cta-button {
+                display: block;
+                margin: 0 auto;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1 class="company-name">Abbasi & Abbasi Inc</h1>
+            <h2 class="job-title">General and Operations Manager</h2>
+        </div>
+
+        <div class="location">
+            615 North Palestine St, Athens, TX 75751
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Responsibilities</h3>
+            <ul class="responsibilities">
+                <li>Oversee daily operations of a business or department</li>
+                <li>Establish organizational goals, policies, and procedures</li>
+                <li>Manage budgets, staffing, production processes, and resource allocation</li>
+                <li>Direct or coordinate company activities including sales, service, production, and administration</li>
+                <li>Analyze financial statements and activity reports to identify areas for efficiency improvements</li>
+                <li>Implement business strategies to achieve organizational objectives</li>
+                <li>Supervise department heads and other managerial staff</li>
+                <li>Ensure compliance with local, state, and federal regulations</li>
+                <li>Develop and evaluate operational processes and procedures, optimizing efficiency and effectiveness</li>
+                <li>Assess performance results for departments or the overall organization, and take corrective action if necessary</li>
+                <li>Represent the organization in all strategic and operational matters</li>
+            </ul>
+        </div>
+
+        <div class="cta-section">
+            <p class="cta-text">Interested in this position?</p>
+            <a href="mailto:sabbasiathens@gmail.com?subject=Application for General and Operations Manager" class="cta-button">Apply Now</a>
+            <p class="application-note">Gas station and convenience store applications</p>
+            <p class="cta-text" style="margin-top: 24px; font-size: 16px;">
+                Or contact us at <a href="mailto:sabbasiathens@gmail.com" class="email-link">sabbasiathens@gmail.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
