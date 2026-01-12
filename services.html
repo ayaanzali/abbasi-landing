@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Abbasi & Abbasi Inc</title>
+    <title>Services - Abbasi & Abbasi Inc</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -92,76 +92,63 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 100px 40px 120px;
         }
 
-        .hero-section {
-            text-align: center;
-            margin-bottom: 100px;
-        }
-
-        .hero-title {
+        .page-title {
             font-family: 'Playfair Display', serif;
-            font-size: 56px;
+            font-size: 48px;
             font-weight: 600;
             letter-spacing: -0.5px;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
             color: #ffffff;
+            text-align: center;
         }
 
-        .hero-subtitle {
-            font-size: 22px;
-            color: rgba(255, 255, 255, 0.85);
+        .page-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
             font-weight: 300;
-            max-width: 700px;
-            margin: 0 auto 48px;
-            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 80px;
         }
 
-        .work-with-us-button {
-            display: inline-block;
-            padding: 18px 56px;
-            background-color: #ffffff;
-            color: #2c3e50;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 48px 40px;
+            border-radius: 4px;
             transition: all 0.3s ease;
-            border: 1px solid #ffffff;
-            cursor: pointer;
         }
 
-        .work-with-us-button:hover {
-            background-color: transparent;
-            color: #ffffff;
-            transform: translateY(-2px);
+        .service-card:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            transform: translateY(-4px);
         }
 
-        .welcome-section {
-            margin-top: 120px;
-        }
-
-        .section-title {
+        .service-title {
             font-family: 'Playfair Display', serif;
-            font-size: 36px;
+            font-size: 28px;
             font-weight: 600;
-            margin-bottom: 32px;
+            margin-bottom: 20px;
             color: #ffffff;
             letter-spacing: -0.3px;
         }
 
-        .welcome-content {
-            font-size: 18px;
+        .service-description {
+            font-size: 16px;
             color: rgba(255, 255, 255, 0.85);
-            line-height: 1.9;
-            max-width: 800px;
-        }
-
-        .welcome-content p {
-            margin-bottom: 24px;
+            line-height: 1.8;
+            font-weight: 300;
         }
 
         /* Footer */
@@ -208,25 +195,21 @@
                 padding: 60px 24px 80px;
             }
 
-            .hero-title {
-                font-size: 40px;
+            .page-title {
+                font-size: 36px;
             }
 
-            .hero-subtitle {
-                font-size: 18px;
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
             }
 
-            .work-with-us-button {
-                padding: 16px 40px;
-                font-size: 16px;
+            .service-card {
+                padding: 36px 28px;
             }
 
-            .section-title {
-                font-size: 28px;
-            }
-
-            .welcome-content {
-                font-size: 16px;
+            .service-title {
+                font-size: 24px;
             }
 
             .footer-container {
@@ -245,18 +228,16 @@
                 padding: 40px 20px 60px;
             }
 
-            .hero-title {
+            .page-title {
                 font-size: 32px;
             }
 
-            .hero-subtitle {
+            .page-subtitle {
                 font-size: 16px;
             }
 
-            .work-with-us-button {
-                display: block;
-                margin: 0 auto;
-                max-width: 280px;
+            .service-card {
+                padding: 32px 24px;
             }
         }
     </style>
@@ -266,8 +247,8 @@
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Abbasi & Abbasi Inc</a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="careers.html">Careers</a></li>
             </ul>
         </div>
@@ -275,18 +256,28 @@
 
     <main>
         <div class="container">
-            <div class="hero-section">
-                <h1 class="hero-title">Welcome to Abbasi & Abbasi Inc</h1>
-                <p class="hero-subtitle">Your premier destination for quality fuel and exceptional convenience in the heart of Athens, Texas. We are committed to serving our community with excellence, reliability, and genuine care.</p>
-                <a href="careers.html" class="work-with-us-button">Work With Us</a>
-            </div>
+            <h1 class="page-title">Our Services</h1>
+            <p class="page-subtitle">Comprehensive solutions for your fuel and convenience needs</p>
 
-            <div class="welcome-section">
-                <h2 class="section-title">Our Commitment</h2>
-                <div class="welcome-content">
-                    <p>At Abbasi & Abbasi Inc, we understand that quality fuel and exceptional service are the cornerstones of a trusted convenience store. Located at 615 North Palestine St in Athens, TX, we have been proudly serving our community with dedication and integrity.</p>
-                    <p>Our commitment extends beyond just providing high-quality fuel and a fully stocked convenience store. We focus on creating a welcoming environment where every customer feels valued and every visit is a positive experience. From our carefully selected products to our attentive customer service, every aspect of our operation reflects our dedication to excellence.</p>
-                    <p>As a community-focused business, we believe in building lasting relationships with our neighbors and contributing to the vibrant Athens community. Whether you're stopping by for fuel, snacks, or daily essentials, we're here to serve you with the highest standards of quality and care.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h2 class="service-title">High-Quality Fuel</h2>
+                    <p class="service-description">We provide premium-grade fuel that meets the highest industry standards. Our fuel is regularly tested and maintained to ensure optimal performance for your vehicle. Whether you drive a compact car or a heavy-duty truck, we have the right fuel solution for your needs.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2 class="service-title">Fully Stocked Convenience Store</h2>
+                    <p class="service-description">Our convenience store offers a wide selection of products to meet your daily needs. From fresh snacks and beverages to essential items and automotive supplies, we maintain a well-organized inventory that's always fully stocked and ready to serve you.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2 class="service-title">Exceptional Customer Service</h2>
+                    <p class="service-description">At Abbasi & Abbasi Inc, customer satisfaction is our top priority. Our friendly and professional staff are trained to provide exceptional service with every interaction. We believe in creating a welcoming atmosphere where every customer feels valued and appreciated.</p>
+                </div>
+
+                <div class="service-card">
+                    <h2 class="service-title">Community-Focused Operations</h2>
+                    <p class="service-description">As a locally owned and operated business, we are deeply committed to the Athens community. We understand the importance of being a reliable neighbor and contributing positively to the area we call home. Your support helps us continue serving this community with excellence.</p>
                 </div>
             </div>
         </div>
@@ -300,3 +291,4 @@
     </footer>
 </body>
 </html>
+
